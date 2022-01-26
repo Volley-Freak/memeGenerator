@@ -8,7 +8,9 @@ export default (props) => {
 
     return(
         <form onSubmit={props.onSubmit}>
+            <h2 className="text-center">Add Your Text</h2>
             <div className="inputs">
+                
             <input
                 type="text"
                 placeholder="Top Text"

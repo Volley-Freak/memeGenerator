@@ -18,17 +18,18 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
   /* border: 1px solid transparent; */
-  background: linear-gradient(to bottom, #141534 50%, #054B4A);
+  background: linear-gradient(to bottom, #0a2036 30%, #054B4A);
   margin-top: 4rem;
   padding: 0;
   max-width: 550px;
 }
 header{
-  background: linear-gradient(to right, #002049 50%, #19AE93);
+  background: linear-gradient(to right, #002049 30%, #19AE93);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,12 +48,14 @@ header img{
 
 
 main{
-  padding: 36px;
+  padding: 0 25px 20px 25px;
 }
-form{
-  /* padding: 36px; */
-  margin-bottom: 36px;
-  color: white;
+
+form h2{
+  /* margin-bottom: 25px; */
+  margin: 15px 0;
+  font-size: 1.5rem;
+  color: #fffffff2;
 }
 .inputs{
   display: flex;
@@ -75,7 +78,7 @@ button{
   background: linear-gradient(to right, #19AE93 30%, #002049);
   border-radius: 5px;
   padding: 10px;
-  /* margin-bottom: 36px; */
+  margin-bottom: 20px;
 }
 
 
@@ -108,4 +111,27 @@ button{
 }
 #bottom-text{
   bottom: 7%;
+}
+
+@media only screen and (max-width: 430px) {
+  /* body {
+    background: linear-gradient(to bottom, #141534 50%, #054B4A);
+  } */
+  .container{
+    margin: 0;
+    height: 100vh;
+    /* background: transparent; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  }
+  main{
+    /* border: 2px solid black; */
+    /* height: 100%; */
+    margin: 15% 0;
+  }
+  form h2,.inputs,button{
+    margin-bottom: 25px;
+  }
+  
 }
