@@ -1,3 +1,24 @@
+# <h1>Meme Generator</h1>
+A meme generator react app in which you can add your custom text.
+
+<h4>https://volley-freak.github.io/memeGenerator/</h4>
+
+
+
+<img src="screenshot2.jpg" width="500" height="700">
+
+<img src="screenshot1.jpg" width="500" height="700">
+
+
+## Languages & Framework Used
+
+![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
+![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![ReactJS](https://img.shields.io/badge/react%20-%23323330.svg?&style=for-the-badge&logo=react&logoColor=%61DBFB)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
