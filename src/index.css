@@ -1,137 +1,291 @@
+@import url(//db.onlinewebfonts.com/c/9b62dc86f936227b3f7b367bd0b6c05e?family=Tw+Cen+MT);
+@font-face {
+  font-family: "Tw Cen MT";
+  src: url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.eot");
+  src: url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.svg#Tw Cen MT")
+      format("svg");
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-body{
-  background: #E5E5E5;
+body {
+  background: #e5e5e5;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Tw Cen MT";
+  letter-spacing: 2px;
 }
 
-.container{
+.container {
   /* border: 1px solid transparent; */
-  background: linear-gradient(to bottom, #0a2036 30%, #054B4A);
-  margin-top: 4rem;
+  background: linear-gradient(123.24deg, #3c454f -25.23%, #04111d 207.63%);
+  /* margin-top: 4rem; */
   padding: 0;
-  max-width: 550px;
+  max-width: 1440px;
+  /* height: 100vh; */
 }
-header{
-  background: linear-gradient(to right, #002049 30%, #19AE93);
+header {
+  /* position: absolute; */
+  /* width: 1440px; */
+  height: 130px;
+  /* left: 0px;
+  top: 0px; */
+
+  background: linear-gradient(91.37deg, #0c5de3 -24.24%, #764ba2 75.77%);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
 }
-header h3{
-  margin: 0;
-  color: white;
-  font-size: 21px;
+header #lessIcon {
+  display: none;
 }
-header img{
-  width: 70px;
-  height: 60px;
-  margin-right: 10px;
+header h3 {
+  font-family: Tw Cen MT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 51px;
+
+  color: #ffffff;
 }
 
-
-main{
-  padding: 0 25px 20px 25px;
+main {
+  padding: 0 105px 20px 105px;
 }
 
-form h2{
+form h2 {
   /* margin-bottom: 25px; */
-  margin: 15px 0;
-  font-size: 1.5rem;
-  color: #fffffff2;
+  /* margin-bottom: 15px 0; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  color: #ffffff;
 }
-.inputs{
+.inputs {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin: 30px 0;
 }
-input{
+.inputs label {
+  font-size: 21px;
   color: white;
-  border: 1.4px solid rgba(255, 255, 255, 0.836);
-  border-radius: 5px;
-  width: 47%;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  display: none;
+}
+input[type="text"] {
+  width: 43%;
+  height: 55px;
+  color: #ffffff75;
   background: transparent;
   font-size: 12px;
   padding: 5px 10px;
+  margin-bottom: 28px;
+
+  /* background: #C4C4C4; */
+  border: 5px solid #6a70d7;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 25px;
 }
-button{
+.inputs input:focus{
+  box-shadow: 0px 0px 20px 3px #4f479b;
+  /* border: none; */
+  outline: none;
+}
+.text-colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.text-color-inputs {
+  margin-top: 28px;
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.text-colors input {
+  height: 52px;
+  width: 52px;
+  /* color : blue; */
+}
+input[type="radio"]:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  
+  content: "";
+  display: inline-block;
+
+}
+input[type="radio"]:checked:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: white;
+  content: "";
+  display: inline-block;
+  /* visibility: visible; */
+  border: 5px solid #6a70d7;
+}
+#black::after {
+  background: black;
+}
+#white::after {
+  background: white;
+}
+#yellow::after {
+  background: #d89701;
+}
+
+button {
+  box-shadow: 6px 9px 8px 3px rgba(0, 0, 0, 0.17);
+  border-radius: 25px;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 450px;
   border: none;
-  color: rgba(255, 255, 255, 0.877);
-  background: linear-gradient(to right, #19AE93 30%, #002049);
+  background: linear-gradient(91.37deg, #0c5de3 -24.24%, #764ba2 75.77%);
   border-radius: 5px;
   padding: 10px;
-  margin-bottom: 20px;
+  align-self: center;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 34px;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-.meme{
+.meme {
+  width: 590px;
+  height: 320px;
+  border: 7px solid #946ff3;
+  border-radius: 8px;
+  box-shadow: 9px 9px 18px 2px rgba(31, 8, 63, 0.58);
   text-align: center;
-  padding-bottom: 20px;
   position: relative;
   overflow: hidden;
+  margin: 60px auto;
 }
-#meme-img{
+#meme-img {
   width: 100%;
-  height: 268px;
+  height: 100%;
 }
 
-#top-text,#bottom-text{
+#top-text,
+#bottom-text {
   /* margin: auto; */
   width: 100%;
-  color: #b38c00;
+  /* color: #b38c00; */
   font-weight: 800;
   /* text-shadow: 2px 2px 1px black; */
-  -webkit-text-stroke: 1.7px rgb(0, 0, 0);
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
   stroke: black;
   font-size: 1.8rem;
-  text-transform: uppercase;
+  text-transform:none;
   position: absolute;
   text-align: center;
 }
-#top-text{
-  top: 2%;
+#top-text {
+  top: 5%;
 }
-#bottom-text{
-  bottom: 7%;
+#bottom-text {
+  bottom: 5%;
 }
 
-@media only screen and (max-width: 430px) {
-  /* body {
-    background: linear-gradient(to bottom, #141534 50%, #054B4A);
-  } */
-  .container{
-    margin: 0;
-    height: 100vh;
-    /* background: transparent; */
-    /* display: flex;
+@media only screen and (max-width: 800px) {
+  main {
+    padding: 0 50px 60px 60px;
+  }
+  header {
+    border-radius: 0 0 50px 50px;
+    height: 68px;
+  }
+  header h3 {
+    font-size: 23px;
+  }
+  header #lessIcon {
+    display: block;
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    left: 30px;
+  }
+  header img {
+    /* display: none; */
+    height: 38px;
+    width: 47px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .meme {
+    width: 100%;
+    height: 300px;
+  }
+  .inputs label {
+    display: block;
+  }
+  .inputs {
     flex-direction: column;
-    align-items: center; */
+    margin-bottom: 0;
   }
-  main{
-    /* border: 2px solid black; */
-    /* height: 100%; */
-    margin: 15% 0;
+  .inputs input {
+    width: 100%;
   }
-  form h2,.inputs,button{
-    margin-bottom: 25px;
+  .text-colors {
+    /* justify-content: start; */
+    align-items: flex-start;
   }
-  
+  .text-color-inputs {
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  button {
+    width: 100%;
+    height: 70px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 8px 7px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    padding: 0 30px 30px 30px;
+  }
 }

@@ -5,14 +5,15 @@ import Meme from "./components/Meme";
 
 function App() {
   let [memeData, setMemeData]=React.useState({
-    topText:"Bhago Yaha Se, Shobhit ne firse",
-    bottomText:" Group me apk file bheji hai",
-    imgUrl:"https://i.imgflip.com/9vct.jpg"
+    topText:"Enter your text here",
+    bottomText:"Enter your text here",
+    imgUrl:"https://i.imgflip.com/9vct.jpg",
+    textColor:'d89701'
 })
 let [memesArray,setMemeArray] =React.useState(); 
 
 function handleChange(event){
-  let {name} = event.target
+  let {name,type,checked} = event.target
   setMemeData(prevMemeData => {
     return{
       ...prevMemeData,
@@ -20,11 +21,11 @@ function handleChange(event){
     }
   })
 }
-// console.log(memeData)
+console.log(memeData)
 
 
 React.useEffect(function(){
-  console.log("useEffect rendered");
+  // console.log("useEffect rendered");
   fetch("https://api.imgflip.com/get_memes")
   .then(res => res.json())
   .then(data => setMemeArray(data.data.memes))
@@ -42,21 +43,36 @@ function getMemeImg(event){
   })
 }
 
+// function changeColor(event){
+//   let color = event.target;
+//   console.log(color)
+//   setMemeData(prevMemeData => {
+//     return{
+//       ...prevMemeData,
+//       [event.target.name]:color.value
+//     }
+//   })
+// }
+
   return (
     <div className="container">
       <Header/>
       <main>
+      <Meme
+        memeImg={memeData.imgUrl}
+        topText={memeData.topText}
+        bottomText={memeData.bottomText}
+        textColor={memeData.textColor}
+      />
       <Form
         topText={memeData.topText}
         bottomText={memeData.bottomText}
         onChange={handleChange}
         onSubmit={getMemeImg}
+        colorChange={handleChange}
+        textColor={memeData.textColor}
       />
-      <Meme
-        memeImg={memeData.imgUrl}
-        topText={memeData.topText}
-        bottomText={memeData.bottomText}
-      />
+      
       </main>
     </div>
   );
